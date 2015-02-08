@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="contactbook.DIsplayContactActivity" 
+     android:background="@drawable/background">
+    
+
+   <ImageView
+        android:id="@+id/icon"
+        android:layout_width="42px"
+        android:layout_height="42px"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="4px"
+        android:src="@drawable/ic_launcher" >
+    </ImageView>
+
+    
+    <TextView
+        android:text="@string/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:typeface="sans"
+		android:textColor="#d5f45d"
+        />
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40sp"
+        android:layout_above="@+id/getdata" 
+        android:divider="#bbbbbb"
+        android:dividerHeight="0.5dp"
+        
+        />
+        <TextView
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:typeface="sans"
+		android:textColor="#FFFFFF"
+		android:background="@drawable/border"
+        />
+  
+            <TextView
+        android:id="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fname"
+         android:textStyle="bold"
+        android:textSize="24sp"
+        android:typeface="sans"
+		android:textColor="#FFFFFF"
+		android:background="@drawable/border"
+        />
+      <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lname"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:typeface="sans"
+		android:textColor="#FFFFFF"
+		android:background="@drawable/border"
+        />
+
+       <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:typeface="sans"
+		android:textColor="#FFFFFF"
+		android:background="@drawable/border"
+        />
+
+       <Button
+           android:id="@+id/deluser"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="72dp"
+           android:background="#d5f45d"
+           android:onClick="delMessage"
+           android:text="@string/button_send1" />
+
+</LinearLayout>
