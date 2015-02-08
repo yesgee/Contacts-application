@@ -1,0 +1,77 @@
+extends layout
+
+block content
+    h1= title
+
+
+    // Wrapper
+    #wrapper
+
+    
+        #userInfo
+            h2 User Info
+            p
+                strong First Name:
+                |  <span id='userInfofirstname'></span>
+                br
+                strong Last Name:
+                |  <span id='userInfolastname'></span>
+                br
+                strong Phone:
+                |  <span id='userInfophone'></span>
+                br
+                strong Address:
+                |  <span id='userInfoLocation'></span>
+                br
+                strong Email:
+                |  <span id='userInfoemail'></span>
+        
+        br
+        h2 List of contacts
+        #userList
+            table
+                thead
+                    th First Name
+                    th Last name
+                    th Phone
+                    th Email
+                    th Address
+                    th Action
+                tbody
+     
+
+        // ADD USER
+        h2 Add New Contact
+        #addUser
+            fieldset
+                placeholder First name
+                br
+                input#inputUserfirstname(type='text', placeholder='First name')
+                br
+                br
+                placeholder Last name
+                br
+                input#inputUserlastname(type='text', placeholder='Last Name')
+                br
+                br
+                placeholder Email
+                br
+                input#inputUserEmail(type='text', placeholder='Email')
+                br
+                br
+                placeholder Phone
+                br
+                input#inputUserPhone(type='text', placeholder='Phone')
+                br
+                br
+                placeholder Address
+                br
+                input#inputUserLocation(type='text', placeholder='Address')
+                br
+                br
+                button#btnAddUser Add User
+        // /ADD USER
+
+
+
+   
